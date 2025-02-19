@@ -858,7 +858,7 @@ fn ui_system(
         });
 
     // Matrix visualization and editing window
-    egui::Window::new("Behavior Matrix")
+    egui::Window::new("Behavior Table")
         .default_pos([WINDOW_WIDTH - 300.0, 10.0])
         .default_size([280.0, 300.0])
         .show(contexts.ctx_mut(), |ui| {
