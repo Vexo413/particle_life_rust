@@ -1,5 +1,15 @@
 # Particle Life Rust
 
+## Description
+
+Particle Life was originally created by the computer scientist Jeffrey Ventrella, where it was first called 'Clusters'.
+There have been many different implementations of it and now is more commonly referred to as 'Particle Life'.
+This is my implementation of Particle Life in Rust and Bevy, with the goal of high customization.
+
+The simulation is quite simple, each particle color, or species has it's own special relation to every other color, which can be defined in a table. If the relation is 1 the particle will have a full velocity towards that particle, if it is -1 it will have a full velocity going away from that particle. Then all of these velocitys would be added together to get the output velocity at which the particle moves. There is also min distance, beta so that they don't group into a single point and a max distance, gamma.
+
+
+
 ## Installation
 
 First make sure you have rust installed.
@@ -31,12 +41,6 @@ cargo run --release
 `↑`: Zoom in
 
 `↓`: Zoom out
-
-`Q`: Generate new behaviors
-
-`E`: Generate new attraction distances
-
-`R`: Restart the simulation
 
 `Left Click`: Add particle
 
