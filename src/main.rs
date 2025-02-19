@@ -250,8 +250,6 @@ fn setup(
 ) {
     commands.spawn(Camera2d::default());
 
-    dbg!(&particle_system.behavior_matrix);
-
     let mut rng = rand::rng();
 
     for _ in 0..NUM_PARTICLES {
@@ -274,7 +272,6 @@ fn update_particles(
     time: Res<Time>,
     mut particle_query: Query<(&mut Transform, &Particle)>,
 ) {
-    dbg!(particle_query.iter().count());
     let dt = time.delta_secs() * particle_system.speed;
     let beta = particle_system.beta;
     let gamma = particle_system.gamma;
