@@ -24,7 +24,7 @@ To get the files, either use git,
 git clone https://github.com/Vexo413/particle_life_rust.git
 ```
 
-[2]: https://github.com/Vexo413/particle_life_rust
+[2]: https://github.com/Vexo413/particle_life_rust/releases/tag/v0.2.2
 
 Or download the zip file from the github page [here][2].
 
