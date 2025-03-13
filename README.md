@@ -47,7 +47,7 @@ cargo run --release
 `Right Click`: Add 100 particles
 
 
-## links
+## Links
 
 [3]: https://www.rust-lang.org/
 
